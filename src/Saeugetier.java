@@ -1,5 +1,23 @@
 public abstract class Saeugetier
 {
+    private String name;
+    private int alter;
+    private String geschlecht;
+
+    //Konstruktor
+
+    public Saeugetier(String name, int alter, String geschlecht)
+    {
+        this.alter = alter;
+        this.name = name;
+        this.geschlecht = geschlecht;
+    }
+
+    //Abstrakte Methode
+    public abstract String printAll();
+
+    //Getter und Setter
+
     public String getName()
     {
         return name;
@@ -29,21 +47,4 @@ public abstract class Saeugetier
     {
         this.geschlecht = geschlecht;
     }
-
-    private String name;
-    private int alter;
-    private String geschlecht;
-
-    public abstract String printAll(); //abstract braucht keinen Körper
-
-    //Konstruktor
-
-    public Saeugetier(String name, int alter, String geschlecht)
-    {
-        this.alter=alter;
-        this.name=name;
-        this.geschlecht=geschlecht;
-    }
-
-
 }
